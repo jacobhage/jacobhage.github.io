@@ -1,0 +1,9 @@
+{
+  "name": "AlmbrandYndlings.Frontend",
+  "version": "0.1.0",
+  "description": "Frontend project for Yndlings site",
+  "main": "index.js",
+  "repository": "https://github.com/AdditionDev/AB-Yndlings.git",
+  "author": "Addition",
+  "license": "MIT"
+}

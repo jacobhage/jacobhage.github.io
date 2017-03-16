@@ -11,34 +11,119 @@
   }
 
   &__menu {
-    color: $font-white;
-    font-size: $fs-big;
+    color: $ebony;
     font-style: italic;
+    font-size: $fs-huge;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    bottom: 0;
+    z-index: 10;
+    background-color: $dark-blue;
+    transition: left 0.35s ease;
+    padding: 80px 0;
+    line-height: initial;
+
+    .is-open & {
+      left: 0;
+    }
+
+
+    @include breakpoint($md){
+      position: relative;
+      top: auto;
+      right: auto;
+      left: auto;
+      bottom: auto;
+      z-index: auto;
+      width: auto;
+      font-size: $fs-big;
+      float: left;
+      display: inline-block;
+      padding: 0 $gutter;
+      line-height: inherit;
+    }
+  }
+
+  &__logo-container {
     float: left;
-    display: inline-block;
     padding: 0 $gutter;
+    height: 100%;
+
+    &--right {
+      float: right;
+    }
+
+  }
+
+  &__logo {
+    height: 60px;
+    cursor: pointer;
+  }
+
+  &__menu-toggler {
+    height: 25px;
+    @include breakpoint($md) {
+      display: none;
+    }
+
+  }
+
+  &__menu-toggler-container {
+    @include breakpoint($md) {
+      display: none;
+    }
+  }
+
+  &__menu-close-container {
+    position: absolute;
+    top: $gutter;
+    right: $gutter;
+    line-height: 0;
+
+    @include breakpoint($md){
+      display: none;
+    }
+
+  }
+
+  &__menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+    background: black;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+    .is-open & {
+      z-index: 5;
+      opacity: 0.7;
+    }
+
+  }
+
+  &__menu-close {
+    height: 25px;
   }
 
   &__menu-item {
-    display: inline-block;
-    padding: 0 $gutter-single;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
+    padding: $gutter;
+
+    @include breakpoint($md){
+      display: inline-block;
+      padding: 0 $gutter-single;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+    }
 
     &:hover {
       background-color: $light-blue;
     }
 
-  }
-
-  &__logo-container {
-    float: right;
-    padding: 0 $gutter;
-    height: 100%;
-  }
-
-  &__logo {
-    height: 60px;
   }
 
 }

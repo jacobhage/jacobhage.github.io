@@ -1,9 +1,52 @@
 .section {
-  background-color: $font-white;
+  background-color: $ebony;
   padding: $gutter*2 $gutter;
+  @include Clearfix;
+
+  &--clean {
+    padding: 0;
+  }
+
+  &--cyan {
+    background-color: $cyan;
+    color: $ebony;
+  }
+
+  &__image {
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../../images/stock-phone.jpg');
+    width: 100%;
+    height: 400px;
+    float: left;
+
+    @include breakpoint($md){
+      width: 50%;
+    }
+
+  }
 
   &__container {
     @include Max-width;
+
+    &--half {
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      float: left;
+
+      @include breakpoint($md){
+        width: 50%;
+      }
+
+    }
+
+  }
+
+  &__header {
+    font-size: $fs-huge;
+    @include Title;
+    padding: $gutter-single $gutter-single 0;
   }
 
   &__item {

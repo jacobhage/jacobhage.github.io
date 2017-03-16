@@ -28,13 +28,22 @@
     <![endif]-->
     <header class="navbar">
       <div class="navbar__container">
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">Menu item 1</li>
-          <li class="navbar__menu-item">Menu item 1</li>
-          <li class="navbar__menu-item">Menu item 1</li>
-          <li class="navbar__menu-item">Menu item 1</li>
-        </ul>
-        <div class="navbar__logo-container">
+        <div class="navbar__logo-container navbar__menu-toggler-container">
+          <img src="images/menu.svg" alt="" class="navbar__logo navbar__menu-toggler">
+        </div>
+        <div class="navbar__menu">
+          <ul>
+            <li class="navbar__menu-item">Menu item 1</li>
+            <li class="navbar__menu-item">Menu item 1</li>
+            <li class="navbar__menu-item">Menu item 1</li>
+            <li class="navbar__menu-item">Menu item 1</li>
+          </ul>
+          <div class="navbar__menu-close-container">
+            <img class="navbar__menu-close" src="images/close.svg" alt="">
+          </div>
+        </div>
+        <div class="navbar__menu-overlay"></div>
+        <div class="navbar__logo-container navbar__logo-container--right">
           <img src="images/logo.svg" alt="" class="navbar__logo">
         </div>
 
@@ -50,30 +59,52 @@
         </div>
       </div>
 
-      <div class="section col-xs-12">
-        <div class="section__container">
-          <div class="section__item col-md-4">
-            <div class="section__icon-wrapper">
-              <img class="section__icon" src="images/phone.svg" alt="">
+      <div class="row">
+        <div class="section col-xs-12">
+          <div class="section__container">
+            <div class="section__item col-md-4">
+              <div class="section__icon-wrapper">
+                <img class="section__icon" src="images/phone.svg" alt="">
+              </div>
+              <div class="section__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+              </div>
             </div>
-            <div class="section__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+            <div class="section__item col-md-4">
+              <div class="section__icon-wrapper">
+                <img class="section__icon" src="images/tablet.svg" alt="">
+              </div>
+              <div class="section__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+              </div>
+            </div>
+            <div class="section__item col-md-4">
+              <div class="section__icon-wrapper">
+                <img class="section__icon" src="images/laptop.svg" alt="">
+              </div>
+              <div class="section__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+              </div>
             </div>
           </div>
-          <div class="section__item col-md-4">
-            <div class="section__icon-wrapper">
-              <img class="section__icon" src="images/tablet.svg" alt="">
-            </div>
-            <div class="section__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
-            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="section section--cyan section--clean">
+          <div class="section__image">
           </div>
-          <div class="section__item col-md-4">
-            <div class="section__icon-wrapper">
-              <img class="section__icon" src="images/laptop.svg" alt="">
-            </div>
-            <div class="section__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+
+          <div class="section__container section__container--half">
+            <div class="section__item">
+              <div class="section_header">Newsletter</div>
+              <form class="form" action="">
+                <input class="form__input" type="text" class="secton__input">
+                <input class="form__input" type="text" class="secton__input">
+                <input class="form__input" type="text" class="secton__input">
+                <input class="form__input" type="text" class="secton__input">
+                <input class="form__input" type="text" class="secton__input">
+              </form>
             </div>
           </div>
         </div>
@@ -114,6 +145,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/navbar.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

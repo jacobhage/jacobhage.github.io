@@ -1,17 +1,26 @@
 .banner {
-  height: 600px;
   background-color: $cyan;
-  color: $font-white;
+  color: $ebony;
   padding: 0;
+
+  @include breakpoint($sm){
+    height: 600px;
+  }
 
   &__container {
     @include Max-width;
-    padding:  210px $gutter $gutter $gutter;
+    padding: $gutter*2 $gutter;
+
+    @include breakpoint($md) {
+      padding:  210px $gutter $gutter $gutter;
+    }
+
   }
 
   &__title {
     padding: 0 $gutter-single;
     font-size: $fs-giant;
+    @include Title;
   }
 
   &__abstract {

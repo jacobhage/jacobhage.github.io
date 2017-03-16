@@ -1,0 +1,22 @@
+.banner {
+  height: 600px;
+  background-color: $cyan;
+  color: $font-white;
+  padding: 0;
+
+  &__container {
+    @include Max-width;
+    padding:  210px $gutter $gutter $gutter;
+  }
+
+  &__title {
+    padding: 0 $gutter-single;
+    font-size: $fs-giant;
+  }
+
+  &__abstract {
+    padding: 0 $gutter-single;
+    font-size: $fs-big;
+  }
+
+}

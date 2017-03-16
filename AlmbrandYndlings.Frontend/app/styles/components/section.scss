@@ -1,0 +1,33 @@
+.section {
+  background-color: $font-white;
+  padding: $gutter*2 $gutter;
+
+  &__container {
+    @include Max-width;
+  }
+
+  &__item {
+    padding: $gutter 0;
+
+    @include breakpoint($md){
+      padding: $gutter-single;
+    }
+  }
+
+  &__icon-wrapper {
+    margin: 0 auto;
+    height: 150px;
+    text-align: center;
+  }
+
+  &__icon {
+    height: 150px;
+  }
+
+  &__text {
+    padding: $gutter $gutter-single 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+}

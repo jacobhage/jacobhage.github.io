@@ -1,0 +1,44 @@
+.navbar {
+  background-color: $dark-blue;
+  height: 100px;
+
+
+  &__container {
+    @include Max-width;
+    @include clearfix;
+    height: 100%;
+    line-height: 100px;
+  }
+
+  &__menu {
+    color: $font-white;
+    font-size: $fs-big;
+    font-style: italic;
+    float: left;
+    display: inline-block;
+    padding: 0 $gutter;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    padding: 0 $gutter-single;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+  }
+
+  &__logo-container {
+    float: right;
+    padding: 0 $gutter;
+    height: 100%;
+  }
+
+  &__logo {
+    height: 60px;
+  }
+
+}

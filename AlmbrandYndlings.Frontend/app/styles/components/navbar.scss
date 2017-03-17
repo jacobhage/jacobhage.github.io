@@ -12,7 +12,6 @@
 
   &__menu {
     color: $ivory;
-    // font-style: italic;
     font-size: $fs-large;
     position: fixed;
     top: 0;
@@ -47,11 +46,21 @@
   }
 
   &__title {
-    float: left;
-    height: 100%;
-    line-height: 100px;
+    position: absolute;
+    top: $gutter;
+    left: $gutter;
     font-size: $fs-huge;
-    padding: 0 $gutter;
+
+
+    @include breakpoint($md) {
+      position: relative;
+      top: auto;
+      left: auto;
+      float: left;
+      height: 100%;
+      line-height: 100px;
+      padding: 0 $gutter;
+    }
   }
 
   &__logo-container {

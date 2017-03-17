@@ -25,7 +25,7 @@
 
   &__container {
     @include Max-width;
-    padding: 160px $gutter;
+    padding: $gutter;
 
     @include breakpoint($md) {
       padding:  210px $gutter $gutter $gutter;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="74px" viewBox="0 0 57 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ring</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="56.83 1.42108547e-14 56.83 73.9305185 0.000181319683 73.9305185 0.000181319683 0 56.83 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ring">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M8.1027,43.728 C9.0877,32.528 19.0017,24.217 30.2017,25.203 C41.4037,26.188 49.7137,36.102 48.7277,47.302 C47.7427,58.503 37.8287,66.814 26.6277,65.828 C15.4277,64.843 7.1177,54.928 8.1027,43.728 M25.9247,73.82 C41.5327,75.193 55.3467,63.613 56.7197,48.005 C57.7687,36.079 51.2507,25.207 41.1557,20.126 L50.3607,10.644 L50.0197,10.613 L42.2797,1.769 L22.1847,0 L13.0197,7.358 L12.8957,7.347 L12.9447,7.419 L12.8857,7.466 L12.9817,7.475 L20.3037,18.292 C9.4767,21.532 1.1597,31.099 0.1107,43.025 C-1.2623,58.632 10.3177,72.447 25.9247,73.82" id="Fill-1" fill="#1C1F3C" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

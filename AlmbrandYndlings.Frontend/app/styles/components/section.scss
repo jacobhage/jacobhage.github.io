@@ -1,5 +1,4 @@
 .section {
-  background-color: inherit;
   padding: $gutter*2 $gutter;
   color: $font-black;
   @include Clearfix;
@@ -18,6 +17,11 @@
 
   &--ivory {
     background-color: $ivory;
+  }
+
+  &--dark-blue {
+    background-color: $dark-blue;
+    color: $white;
   }
 
   &__image {
@@ -50,7 +54,7 @@
     }
 
     &--narrow {
-      max-width: 900px;
+      max-width: 1000px;
     }
 
   }
@@ -70,7 +74,7 @@
     font-size: $fs-base;
     text-align: center;
     max-width: 800px;
-    margin: $gutter-single auto $gutter;
+    margin: $gutter-single auto $gutter*1.5;
   }
 
   &__item {
@@ -81,20 +85,38 @@
     }
   }
 
+  &__item-header {
+    font-size: $fs-large;
+    text-align: center;
+  }
+
   &__icon-wrapper {
     margin: 0 auto $gutter;
-    height: 150px;
+    height: 100px;
     text-align: center;
   }
 
   &__icon {
-    height: 150px;
+    height: 100px;
   }
 
   &__text {
     // padding: $gutter $gutter-single 0;
     // max-width: 400px;
     // margin: 0 auto;
+  }
+
+  &__ul {
+    padding: $gutter-single;
+  }
+
+  &__li {
+    margin-bottom: 10px;
+
+    &::before {
+      content: url('../../images/checkmark.svg');
+      padding-right: 10px;
+    }
   }
 
 }

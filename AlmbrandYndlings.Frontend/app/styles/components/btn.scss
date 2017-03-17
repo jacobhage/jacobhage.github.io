@@ -14,22 +14,25 @@
     background-color: $light-red;
   }
 
-  &--inactive {
-    border: 2px solid $dark-red;
-    background-color: none;
-  }
-
   &--banner {
     display: block;
     margin: 60px auto 0;
   }
 
-  &__toggler {
+  &--section {
     display: block;
+    margin: $gutter auto 0;
+  }
+
+  &__toggler {
     width: 200px;
     margin-bottom: $gutter-single;
     font-size: $fs-base;
     text-align: left;
+
+    @include breakpoint($md){
+      display: block;
+    }
 
     &:hover {
       color: $white;
@@ -42,8 +45,8 @@
       transition: background-color 0.25s ease;
 
       &:hover {
-        color: $white;
-        background-color: $dark-red;
+        color: $dark-red;
+        background-color: $light-grey;
       }
     }
 

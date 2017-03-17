@@ -12,6 +12,7 @@
 
   &:hover {
     background-color: $light-red;
+    color: $white;
   }
 
   &--banner {
@@ -20,8 +21,12 @@
   }
 
   &--section {
-    display: block;
-    margin: $gutter auto 0;
+    display: inline-block;
+
+    @include breakpoint($md){
+      display: block;
+      margin: $gutter auto 0;
+    }
   }
 
   &__toggler {
@@ -48,6 +53,14 @@
         color: $dark-red;
         background-color: $light-grey;
       }
+    }
+
+  }
+
+  &__container {
+
+    &--center {
+      text-align: center;
     }
 
   }

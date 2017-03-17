@@ -1,15 +1,31 @@
 .banner {
   background-color: $cyan;
-  color: $ebony;
+  color: $ivory;
   padding: 0;
+  height: 500px;
 
-  @include breakpoint($sm){
+  &--video {
+    background-image: url('../../images/stock-phone.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__overlay {
+    background-color: rgba(black, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  @include breakpoint($md){
     height: 600px;
   }
 
   &__container {
     @include Max-width;
-    padding: $gutter*2 $gutter;
+    padding: 160px $gutter;
 
     @include breakpoint($md) {
       padding:  210px $gutter $gutter $gutter;
@@ -18,13 +34,11 @@
   }
 
   &__title {
-    padding: 0 $gutter-single;
     font-size: $fs-giant;
     @include Title;
   }
 
   &__abstract {
-    padding: 0 $gutter-single;
     font-size: $fs-big;
   }
 

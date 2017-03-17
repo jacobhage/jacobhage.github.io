@@ -1,0 +1,52 @@
+.btn {
+  max-width: 300px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $dark-red;
+  color: $white;
+  text-align: center;
+  font-size: 18px;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-red;
+  }
+
+  &--inactive {
+    border: 2px solid $dark-red;
+    background-color: none;
+  }
+
+  &--banner {
+    display: block;
+    margin: 60px auto 0;
+  }
+
+  &__toggler {
+    display: block;
+    width: 200px;
+    margin-bottom: $gutter-single;
+    font-size: $fs-base;
+    text-align: left;
+
+    &:hover {
+      color: $white;
+      background-color: $dark-red;
+    }
+
+    &--inactive {
+      color: $dark-red;
+      background: none;
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        color: $white;
+        background-color: $dark-red;
+      }
+    }
+
+  }
+
+}

@@ -1,7 +1,7 @@
 .navbar {
   background-color: $dark-blue;
   height: 100px;
-
+  color: $ivory;
 
   &__container {
     @include Max-width;
@@ -11,9 +11,9 @@
   }
 
   &__menu {
-    color: $ebony;
-    font-style: italic;
-    font-size: $fs-huge;
+    color: $ivory;
+    // font-style: italic;
+    font-size: $fs-large;
     position: fixed;
     top: 0;
     left: -300px;
@@ -41,9 +41,17 @@
       font-size: $fs-big;
       float: left;
       display: inline-block;
-      padding: 0 $gutter;
+      padding: 0;
       line-height: inherit;
     }
+  }
+
+  &__title {
+    float: left;
+    height: 100%;
+    line-height: 100px;
+    font-size: $fs-huge;
+    padding: 0 $gutter;
   }
 
   &__logo-container {
@@ -110,18 +118,28 @@
     height: 25px;
   }
 
+  &__ul {
+
+    @include breakpoint($md){
+      float: left;
+    }
+
+  }
+
   &__menu-item {
     padding: $gutter;
 
     @include breakpoint($md){
-      display: inline-block;
+      float: left;
       padding: 0 $gutter-single;
       transition: background-color 0.2s ease;
       cursor: pointer;
+      min-width: 100px;
+      text-align: center;
     }
 
     &:hover {
-      background-color: $light-blue;
+      background-color: $cyan;
     }
 
   }

@@ -1,15 +1,23 @@
 .section {
-  background-color: $ebony;
+  background-color: inherit;
   padding: $gutter*2 $gutter;
+  color: $font-black;
   @include Clearfix;
 
   &--clean {
     padding: 0;
   }
 
-  &--cyan {
-    background-color: $cyan;
-    color: $ebony;
+  &--white {
+    background-color: $white;
+  }
+
+  &--light-blue {
+    background-color: $bg-light-blue;
+  }
+
+  &--ivory {
+    background-color: $ivory;
   }
 
   &__image {
@@ -47,18 +55,30 @@
     font-size: $fs-huge;
     @include Title;
     padding: $gutter-single $gutter-single 0;
+
+    &--center {
+      text-align: center;
+    }
+
+  }
+
+  &__subheader {
+    font-size: $fs-base;
+    text-align: center;
+    max-width: 800px;
+    margin: $gutter-single auto $gutter;
   }
 
   &__item {
     padding: $gutter 0;
 
     @include breakpoint($md){
-      padding: $gutter-single;
+      padding: $gutter-single $gutter;
     }
   }
 
   &__icon-wrapper {
-    margin: 0 auto;
+    margin: 0 auto $gutter;
     height: 150px;
     text-align: center;
   }
@@ -68,9 +88,9 @@
   }
 
   &__text {
-    padding: $gutter $gutter-single 0;
-    max-width: 400px;
-    margin: 0 auto;
+    // padding: $gutter $gutter-single 0;
+    // max-width: 400px;
+    // margin: 0 auto;
   }
 
 }

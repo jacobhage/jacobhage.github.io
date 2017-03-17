@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AlmbrandYndlings Frontend</title>
+    <title>Yndlings</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -31,12 +31,12 @@
         <div class="navbar__logo-container navbar__menu-toggler-container">
           <img src="images/menu.svg" alt="" class="navbar__logo navbar__menu-toggler">
         </div>
+        <div class="navbar__title">Yndlings</div>
         <div class="navbar__menu">
           <ul>
-            <li class="navbar__menu-item">Menu item 1</li>
-            <li class="navbar__menu-item">Menu item 1</li>
-            <li class="navbar__menu-item">Menu item 1</li>
-            <li class="navbar__menu-item">Menu item 1</li>
+            <li class="navbar__menu-item">Ting</li>
+            <li class="navbar__menu-item">Abonnement</li>
+            <li class="navbar__menu-item">Sådan dækker forsikringen</li>
           </ul>
           <div class="navbar__menu-close-container">
             <img class="navbar__menu-close" src="images/close.svg" alt="">
@@ -52,60 +52,89 @@
 
     <div class="content">
 
-      <div class="banner col-xs-12">
+      <!-- <div class="banner col-xs-12">
         <div class="banner__container">
           <div class="banner__title">Yndlings</div>
-          <div class="banner__abstract">Enticing abstract Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum aperiam corporis vel animi. Sunt accusantium animi voluptatum quos architecto! Laboriosam asperiores repellat explicabo ad quisquam nostrum quas, quaerat consequatur?</div>
+          <div class="banner__abstract">Yndlings er et stærkt alternativ til dig, som har fravalgt en alm. indboforsikring. Her betaler du kun for at forsikre de ting, du holder mest af. Samtidig har vi inkluderet tre essentielle dækninger i dit abonnement.</div>
+        </div>
+      </div> -->
+
+      <div class="banner banner--video col-xs-12">
+        <div class="banner__overlay">
+          <div class="banner__container">
+            <div class="banner__title">Beskyt dig selv og dine yndlingsting</div>
+            <div class="banner__abstract">Yndlings er et stærkt alternativ til dig, som har fravalgt en alm. indboforsikring. Her betaler du kun for at forsikre de ting, du holder mest af. Samtidig har vi inkluderet tre essentielle dækninger i dit abonnement.</div>
+            <a class="btn btn--banner">Se hvilke ting du kan forsikre</a>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="section col-xs-12">
-          <div class="section__container">
-            <div class="section__item col-md-4">
-              <div class="section__icon-wrapper">
-                <img class="section__icon" src="images/phone.svg" alt="">
-              </div>
-              <div class="section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
-              </div>
-            </div>
-            <div class="section__item col-md-4">
-              <div class="section__icon-wrapper">
-                <img class="section__icon" src="images/tablet.svg" alt="">
-              </div>
-              <div class="section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
-              </div>
-            </div>
-            <div class="section__item col-md-4">
-              <div class="section__icon-wrapper">
-                <img class="section__icon" src="images/laptop.svg" alt="">
-              </div>
-              <div class="section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
-              </div>
+      <div class="section section--white col-xs-12">
+        <div class="section__container">
+          <div class="section__header section__header--center">Sådan virker Yndlings</div>
+          <div class="section__subheader">
+            Yndlings er ikke en indboforsikring. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+          </div>
+          <div class="section__item col-md-4">
+            <div class="btn btn__toggler">Yndlings</div>
+            <div class="btn btn__toggler btn__toggler--inactive">Alm. indboforsikring</div>
+          </div>
+          <div class="section__item col-md-8">
+            <div class="section__text">
+              <p>Bla bla fordelene ved Yndlings. Nulla vitae elit libero, a pharetra augue.</p>
+              <ul class="section__ul">
+                <li class="section__li">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="section__li">Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                <li class="section__li">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+              </ul>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="section section--cyan section--clean">
-          <div class="section__image">
-          </div>
-
-          <div class="section__container section__container--half">
-            <div class="section__item">
-              <div class="section_header">Newsletter</div>
-              <form class="form" action="">
-                <input class="form__input" type="text" class="secton__input">
-                <input class="form__input" type="text" class="secton__input">
-                <input class="form__input" type="text" class="secton__input">
-                <input class="form__input" type="text" class="secton__input">
-                <input class="form__input" type="text" class="secton__input">
-              </form>
+      <div class="section section--light-blue col-xs-12">
+        <div class="section__container">
+          <div class="section__item col-md-4">
+            <div class="section__icon-wrapper">
+              <img class="section__icon" src="images/phone.svg" alt="">
             </div>
+            <div class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+            </div>
+          </div>
+          <div class="section__item col-md-4">
+            <div class="section__icon-wrapper">
+              <img class="section__icon" src="images/tablet.svg" alt="">
+            </div>
+            <div class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+            </div>
+          </div>
+          <div class="section__item col-md-4">
+            <div class="section__icon-wrapper">
+              <img class="section__icon" src="images/laptop.svg" alt="">
+            </div>
+            <div class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo quis rem blanditiis ut cumque ullam veritatis, consequatur repellat deserunt a molestias, exercitationem sunt cupiditate.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section--ivory section--clean">
+        <div class="section__image">
+        </div>
+        <div class="section__container section__container--half">
+          <div class="section__item">
+            <div class="section_header">Skriv mig op</div>
+            <form class="form" action="">
+              <input class="form__input" type="text" class="secton__input">
+              <input class="form__input" type="text" class="secton__input">
+              <input class="form__input" type="text" class="secton__input">
+              <input class="form__input" type="text" class="secton__input">
+              <input class="form__input" type="text" class="secton__input">
+            </form>
           </div>
         </div>
       </div>

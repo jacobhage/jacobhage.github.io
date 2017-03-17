@@ -70,24 +70,35 @@
       </div>
 
       <div class="section section--white col-xs-12">
-        <div class="section__container">
+        <div class="section__container section__container--narrow">
           <div class="section__header section__header--center">Sådan virker Yndlings</div>
           <div class="section__subheader">
             Yndlings er ikke en indboforsikring. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
           </div>
-          <div class="section__item col-md-4">
-            <div class="btn btn__toggler">Yndlings</div>
-            <div class="btn btn__toggler btn__toggler--inactive">Alm. indboforsikring</div>
-          </div>
-          <div class="section__item col-md-8">
-            <div class="section__text">
-              <p>Bla bla fordelene ved Yndlings. Nulla vitae elit libero, a pharetra augue.</p>
-              <ul class="section__ul">
-                <li class="section__li">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="section__li">Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-                <li class="section__li">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
-              </ul>
-              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <div class="row">
+            <div class="section__item col-md-3">
+              <div class="btn btn__toggler" data-target="toggle-yndling">Yndlings</div>
+              <div class="btn btn__toggler btn__toggler--inactive" data-target="toggle-indbo">Alm. indboforsikring</div>
+            </div>
+            <div class="section__item col-md-9">
+              <div class="section__text text-toggle" id="toggle-yndling">
+                <p>Bla bla fordelene ved Yndlings. Nulla vitae elit libero, a pharetra augue.</p>
+                <ul class="section__ul">
+                  <li class="section__li">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li class="section__li">Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                  <li class="section__li">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+                </ul>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              </div>
+              <div class="section__text hide text-toggle" id="toggle-indbo">
+                <p>INDBO. Nulla vitae elit libero, a pharetra augue.</p>
+                <ul class="section__ul">
+                  <li class="section__li">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li class="section__li">Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                  <li class="section__li">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+                </ul>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -175,6 +186,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/text-toggler.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

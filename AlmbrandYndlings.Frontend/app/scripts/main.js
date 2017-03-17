@@ -2,6 +2,7 @@
 
 	App.Init = () => {
 		App.Navbar = App.Navbar();
+		App.TextToggler = App.TextToggler();
 	}
 
 	$(() => {
